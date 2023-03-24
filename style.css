@@ -1,0 +1,80 @@
+/*2 axes
+
+by default
+main-horizontal
+cross-vertical
+
+flex-direction:row by default
+
+if flex-direction:column main axis vertical
+
+justify-content can be start,end or center.Default is start.
+it aligns items on main axis
+can be space-around or space-between or space-evenly to keep spaces
+
+align-items is used for cross axis
+can be flex-start,flex-center, flex-end ,baseline
+
+baseline-all fonts on same line
+
+flex-wrap:wrap
+items no longer try to fit into one line
+new property
+
+align-content can only be used when flex-wrap:wrap is set
+it can be flex-start,flex-center, flex-end ,baseline
+can also space-around or space-evenly
+
+gap:1 em used to add gaps between elements
+
+properties for children of container
+
+flex-grow
+takes a unitless value
+flex-shrink
+how fast one item shrinks in comparison to others
+
+flex-basis:300 px
+defines size of item before remaining space is distributed
+item has width of 150 px
+overwrite that by setting
+flex-basis:300 px
+
+flex is shorthand takes 3 properties grow,shrink and basis
+if you set 1 others are set intelligently for you
+
+align-self
+can align an individual item differently from others
+
+
+*/
+
+:root{
+--
+
+}
+
+
+
+.container{
+display: flex;
+/*flex-direction: row;*/
+justify-content: center;
+
+align-items: flex-start;
+/*flex-wrap:wrap*/
+/*align-content:flex:start*/
+/*gap:1 em*/
+
+}
+
+.item-3{
+flex-grow: 1;
+flex-basis:300 px;
+
+/*align-self:center;*/
+
+/*last item appears first*/
+
+order:-1;
+}
