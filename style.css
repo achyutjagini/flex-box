@@ -46,12 +46,72 @@ if you set 1 others are set intelligently for you
 align-self
 can align an individual item differently from others
 
+*/
 
+
+/*
+This is a CSS code block defining three custom CSS variables 
+using the CSS variable syntax.
+
+--clr-dark is set to the color #0f172a.
+--clr-light is set to the color #f1f5f9.
+--clr-accent is set to the color #e11d48.
+
+CSS variables allow you to define values once and reuse 
+them throughout your CSS code, making it easier to maintain
+and update your styles. In this case, these variables might
+be used to define colors for different parts of a website
+or web application.
+
+Note that these variables are defined at the :root level, which makes
+them global variables that can be accessed and used anywhere in the CSS code.
+
+the first two characters 0f represent the red value in hexadecimal notation. The next two
+characters 17 represent the green value, and the last two characters 2a represent the blue 
+value. Each of these values can range from 00 to FF, which represents
+a range of 256 possible
+values from 0 to 255 in decimal notation.{
+(decimal value) = (16^1) x (2) + (16^0) x (10)
+(decimal value) = (32) + (10)
+(decimal value) = 42
+Therefore, the decimal equivalent of the hexadecimal number 2a is 42
+The ::before pseudo-element is used to insert content before the content of an element, without having to
+modify the HTML markup. To select an element and apply styles to its ::before pseudo-element, you can use
+the following CSS selector:
+
+
+selector::before {
+  /* styles for ::before pseudo-element 
+}
+In this selector, selector is the name of the element that you want to select, such as h1, .my-class, or
+ #my-id. The ::before pseudo-element is indicated by the double colon notation.
+
+
+The box-sizing: border-box property is used in CSS to modify the default box model used to calculate 
+the size and layout of an element.
+
+By default, the box model used in CSS includes only the content area of an element when calculating 
+its width and height. This means that any padding or borders added to an element
+will increase its overall size, potentially causing
+layout issues or unexpected behavior.
+
+The box-sizing: border-box property changes this behavior by including the padding and 
+border of an element in its width and height calculations. This means that the size 
+of the content area of an element is reduced to accommodate any padding or borders,
+ensuring that the element stays within its specified size and
+preventing layout issues.
+
+*::before,*::after applies to all elements on page
 */
 
 :root{
---
+--clr-dark:#0f172a;
+--clr-light:#f1f5f9;
+--clr-accent:#e11d48;
+}
 
+*::before,*::after{
+    box-sizing: border-box;
 }
 
 
